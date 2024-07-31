@@ -1,0 +1,14 @@
+langchain
+langchain_community
+chromadb
+langchain_core
+bs4
+tiktoken
+pypdf
+streamlit
+flask
+requests
+numba
+pyopencl
+cupy-cuda12x
+datasets
