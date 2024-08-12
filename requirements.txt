@@ -11,4 +11,4 @@ requests
 numba
 pyopencl
 cupy-cuda12x
-datasets
+tensorflow

@@ -690,7 +690,7 @@
                     outputDiv.appendChild(newMessage);
 
                     const gptResponse = document.createElement('p');
-                    gptResponse.textContent = `: $धारा:  {data}`;
+                    gptResponse.textContent = `GPT: ${data}`;
                     outputDiv.appendChild(gptResponse);
                 })
                 .catch(error => console.error('Error:', error));
