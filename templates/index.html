@@ -597,7 +597,7 @@
                 <textarea id="message" rows="1" placeholder="Send a message"></textarea>
                 <button class="send-button"><i class="fa fa-paper-plane"></i></button>
             </div>
-            <div class="disclaimer">This GPT is trained on river data and Made by TEAM 7.</div>
+            <div class="disclaimer">This GPT is trained on Ganga River data.</div>
         </div>
 
     </main>
@@ -686,11 +686,11 @@
                 .then(response => response.text())
                 .then(data => {
                     const newMessage = document.createElement('p');
-                    newMessage.textContent = `You: ${message}`;
+                    newMessage.textContent = `You: ${  message}`;
                     outputDiv.appendChild(newMessage);
 
                     const gptResponse = document.createElement('p');
-                    gptResponse.textContent = `GPT: ${data}`;
+                    gptResponse.textContent = `GPT: ${  data}`;
                     outputDiv.appendChild(gptResponse);
                 })
                 .catch(error => console.error('Error:', error));

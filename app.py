@@ -12,7 +12,7 @@ from langchain.document_loaders.pdf import PyPDFDirectoryLoader
 #from langchain.retrievers import DensePassageRetriever
 import bs4
 import chromadb
-import torch
+#import torch
 import json
 
 
@@ -30,8 +30,8 @@ def query():
     return response
 
 if __name__ == '__main__':
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model_local = ChatOllama(model='llama3', device=device)  # Ensure this model runs on GPU if supported
+    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model_local = ChatOllama(model='llama3.2:1b')  # Ensure this model runs on GPU if supported
     embeddings = OllamaEmbeddings(model='nomic-embed-text')
     loaded_vectorstore = Chroma(persist_directory="./chroma_db1", embedding_function=embeddings)
     loaded_vectorstore.get()
